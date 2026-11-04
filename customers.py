@@ -22,7 +22,7 @@ print(customer["ytd_spend"])
 print(customer)
 
 print("----- Exercise 2 -----")
-customer["phone"] = "555-0123"
+customer["phone"] = "813-555-0142"
 print(customer)
 
 customer["tier"] = "platinum"
