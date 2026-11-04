@@ -5,7 +5,7 @@
 # 2. The Exercise 8 pattern reminds me of a PivotTable in Excel, which also groups
 # rows by a category and totals them. The Python version is more useful for
 # large datasets because a loop can process thousands of rows automatically
-# and be run again on new data without rebuilding anything by hand.
+# and be rerun on new data without rebuilding anything by hand.
 
 print("----- Exercise 1 -----")
 customer = {
