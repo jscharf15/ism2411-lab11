@@ -92,11 +92,10 @@ transactions = [
     {"region": "South", "amount": 200},
 ]
 
-summary = {}
+sales_by_region = {}
+for sale in transactions:
+    region = sale["region"]
+    sales_by_region[region] = sales_by_region.get(region, 0) + sale["amount"]
 
-for t in transactions:
-    region = t["region"]
-    summary[region] = summary.get(region, 0) + t["amount"]
-
-for region in sorted(summary):
-    print(f"{region}: {summary[region]}")
+for region in sorted(sales_by_region):
+    print(f"{region}: {sales_by_region[region]}")
