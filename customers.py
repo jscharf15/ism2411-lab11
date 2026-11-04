@@ -1,4 +1,4 @@
-# Reflection
+# Self-Assessment Questions
 # 1. I use .get() when a key might not be there, so my code does not crash.
 # I use brackets when the key should be there, so I get an error if
 # something is wrong. What I think is that I use .get() for maybe and brackets for must.
