@@ -32,12 +32,13 @@ del customer["email"]
 print(customer)
 
 print("----- Exercise 3 -----")
+# New version
 print(customer.get("email", "no email on file"))
 
 try:
     print(customer["email"])
-except KeyError as e:
-    print("KeyError caught: the key", e, "does not exist")
+except KeyError as error:
+    print(f"KeyError Caught: {error}")
 
 print("----- Exercise 4 -----")
 for key, value in customer.items():
