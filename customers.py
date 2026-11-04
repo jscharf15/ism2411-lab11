@@ -40,7 +40,6 @@ except KeyError as e:
     print("KeyError caught: the key", e, "does not exist")
 
 print("----- Exercise 4 -----")
-# ----- Exercise 4 -----
 for key, value in customer.items():
     print(f"{key}: {value}")
 
