@@ -9,10 +9,10 @@
 
 print("----- Exercise 1 -----")
 customer = {
-    "name": "Janice",
-    "email": "janice@example.com",
-    "tier": "diamond",
-    "ytd_spend": 1500.00,
+    "name": "Alice",
+    "email": "alice@example.com",
+    "tier": "gold",
+    "ytd_spend": 12400,
 }
 
 print(customer["name"])
