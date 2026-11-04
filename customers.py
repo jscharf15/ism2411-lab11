@@ -81,9 +81,9 @@ catalog = {
     "Gadget C": {"price": 49.99, "stock": 8},
 }
 
-for product, info in catalog.items():
-    if info["stock"] < 20:
-        print(f"LOW STOCK: {product} has only {info['stock']} left")
+for product, details in catalog.items():
+    if details["stock"] < 20:
+        print(f"LOW STOCK: {product} - Only {details['stock']} left in stock!")
 
 print("----- Exercise 8 -----")
 transactions = [
