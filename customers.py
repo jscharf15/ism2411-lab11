@@ -1,3 +1,12 @@
+# Reflection
+# 1. I use .get() when a key might not be there, so my code does not crash.
+# I use brackets when the key should be there, so I get an error if
+# something is wrong. What I think is that I use .get() for maybe and brackets for must.
+# 2. The Exercise 8 pattern reminds me of a PivotTable in Excel, which also groups
+# rows by a category and totals them. The Python version is more useful for
+# large datasets because a loop can process thousands of rows automatically
+# and be run again on new data without rebuilding anything by hand.
+
 print("----- Exercise 1 -----")
 customer = {
     "name": "Janice",
