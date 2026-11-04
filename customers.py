@@ -68,3 +68,29 @@ for c in customers:
     rate = tier_discounts.get(c["tier"], 0)
     discount_amount = purchase * rate
     print(f"{c['name']} | {c['tier']} | discount: ${discount_amount:.2f}")
+
+print("----- Exercise 7 -----")
+catalog = {
+    "Widget A": {"price": 9.99, "stock": 150},
+    "Gadget C": {"price": 49.99, "stock": 8},
+}
+
+for product, info in catalog.items():
+    if info["stock"] < 20:
+        print(f"LOW STOCK: {product} has only {info['stock']} left")
+
+print("----- Exercise 8 -----")
+transactions = [
+    {"region": "South", "amount": 300},
+    {"region": "North", "amount": 150},
+    {"region": "South", "amount": 200},
+]
+
+summary = {}
+
+for t in transactions:
+    region = t["region"]
+    summary[region] = summary.get(region, 0) + t["amount"]
+
+for region in sorted(summary):
+    print(f"{region}: {summary[region]}")
