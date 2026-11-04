@@ -64,18 +64,16 @@ print(f"Discount: {discount_rate * 100:.0f}%")
 print(f"Final price: ${final_price:.2f}")
 
 print("----- Exercise 6 -----")
-dict1 = {"name": "John", "tier": "silver", "ytd_spend": 640.00}
-dict2 = {"name": "Bob", "tier": "gold", "ytd_spend": 1480.00}
-dict3 = {"name": "Dave", "tier": "bronze", "ytd_spend": 120.00}
+customers = [
+    {"name": "Bob", "tier": "silver", "ytd_spend": 3200},
+    {"name": "Carol", "tier": "gold", "ytd_spend": 8750},
+    {"name": "David", "tier": "bronze", "ytd_spend": 450},
+]
 
-customers = [dict1, dict2, dict3]
-
-purchase = 300
-
-for c in customers:
-    rate = tier_discounts.get(c["tier"], 0)
-    discount_amount = purchase * rate
-    print(f"{c['name']} | {c['tier']} | discount: ${discount_amount:.2f}")
+for record in customers:
+    rate = tier_discounts.get(record["tier"], 0)
+    discount = 300 * rate # assuming a purchase of $300 for each customer
+    print(f"{record['name']} ({record['tier']}): ${discount:.2f} discount on $300 purchase")
 
 print("----- Exercise 7 -----")
 catalog = {
